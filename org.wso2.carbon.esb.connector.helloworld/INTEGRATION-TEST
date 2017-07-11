@@ -1,0 +1,28 @@
+Product: WSO2 ESB Connector for Sample REST backend
+
+ Pre-requisites:
+
+    - Maven 3.x
+    - Java 1.6 or above
+
+    Tested Platforms:
+
+    - Ubuntu 14.04
+    - WSO2 ESB 5.0.0
+
+
+Steps to follow in setting integration test.
+
+
+ 1. Download ESB 5.0.0 from official website.
+
+ 2. Compress as wso2esb-5.0.0.zip and copy that zip file in to location "<SAMPLE_CONNECTOR_HOME>/repository/".
+
+ 3. Create a backend service with the json response.
+
+ 4. Update the salesforcerest properties file at location "<SAMPLE_CONNECTOR_HOME>/src/test/resources/artifacts/ESB/connector/config" as below.
+
+  i . baseUrl  - The base Url for the sample backend.
+
+ 5.  Navigate to "{SAMPLE_CONNECTOR_HOME}/" and run the following command.
+             $ mvn clean install
